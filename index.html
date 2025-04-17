@@ -1,0 +1,230 @@
+<html>
+<head>
+  <title>Portfolia - Vaishnavi mali</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html, body {
+      height: 100%;
+      font-family: 'Montserrat', sans-serif;
+      color: #fff;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background-color: rgba(0, 0, 0, 0.7);
+      padding: 15px 30px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-size: 26px;
+      color: #fff;
+      font-weight: 700;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 25px;
+      font-size: 18px;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      height: 100vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      background-size: cover;
+      background-position: center;
+    }
+
+    section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .section-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 40px;
+      border-radius: 15px;
+      width: 85%;
+      max-width: 1000px;
+    }
+
+    h1, h2 {
+      font-size: 36px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    ul, p {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 1.8;
+      text-align: left;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    /* Section Background Images */
+    #home 
+	{
+      background-image: url('v1.jpg');
+	}
+
+    #education {
+      background-image: url('v2.jpg');
+    }
+
+    #skills {
+      background-image: url('v3.jpg');
+    }
+
+    #projects {
+      background-image: url('v4.jpg');
+    }
+
+    #experience {
+      background-image: url('v5.jpg');
+    }
+
+    #contact {
+      background-image: url('v6.jpg');
+    }
+
+    footer {
+      background-color: #111;
+      color: white;
+      text-align: center;
+      padding: 20px 0;
+      font-weight: 600;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .menu a {
+        display: block;
+        margin: 10px 0;
+      }
+      .section-content {
+        width: 95%;
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">Portfolia</div>
+    <div class="menu">
+      <a href="#home">Home</a>
+      <a href="#education">Education</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section id="home">
+    <div class="section-content">
+      <h1>I am Vaishnavi Laxman Mali</h1>
+      <p>A Computer Engineering student</p>
+    </div>
+  </section>
+
+  <section id="education">
+    <div class="section-content">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>B.E. in Computer Science & Engineering</strong> – Solapur University (2030)</li>
+        <li><strong>Diploma in Computer Science & Engineering</strong> – MSBTE (2027)</li>
+        <li><strong>SSC</strong> – Maharashtra State Board, pune (2024)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-content">
+      <h2>Skills</h2>
+      <ul>
+		<li>reading story book & playing in chess</li>
+        <li>Communication & Presentation</li>
+        <li>Critical Thinking & Client Follow-Up</li>
+        <li>Customer Management & Requirement Gathering</li>
+        
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-content">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>street light System:</strong> IOT based street light system</li>
+        <li><strong>Online Generation of TC & Bonafide Certificate:</strong> arduino-based app for students to apply & receive certificates.</li>
+        <li><strong>Buyers and Sellers:</strong> Online ordering system using arduino for products/services.</li>
+		<li><strong>Any year calendar generator:</strong> Input year and generate a full calendar with proper alignment</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="experience">
+    <div class="section-content">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Govt. Polytechnic, Solapur</strong> – STUDENT(Jul 2024 – Present)<br>Subjects: ENGLISH,PCBPCM,BMS</li>
+        <li><strong>Mahatma Gandhi Vidyalaya,Kalman</strong> –  STUDENT(Jan 2023 – past)<br>Subjects:maths,Science,his,geo,hindi/sanskrut,english,Marathi</li>
+      </ul>
+ 
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="section-content">
+      <h2>Contact</h2>
+      <ul>
+        <li><strong>Phone:</strong> +91 8605236399</li>
+        <li><strong>Email:</strong> vaishnavimali2201gmail.com</li>
+        <li><strong>Languages:</strong> English, Hindi, Marathi,</li>
+      </ul>
+      <p>I am passionate about teaching and continuously learning new technologies in computer engineering.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 VAISHNAVI L MALI All rights reserved.</p>
+  </
